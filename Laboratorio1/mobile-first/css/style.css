@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
   margin: 0; }
 
+body {
+  font-family: 'Roboto'; }
+
 ul {
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Roboto' 'Sans Serif'; }
 
 .fa-bars {
   color: white; }
@@ -40,9 +46,10 @@ input:checked + .post {
 
 .navegation_option {
   display: inline;
-  padding: 23px; }
+  padding: 20px; }
 
 .navegation_option a {
+  font-weight: 500;
   color: #a5a7a5; }
 
 .navegation_option a:hover {
@@ -62,6 +69,11 @@ header {
   grid-column: 2/3;
   padding-bottom: 10px; }
 
+.btn_menu {
+  font-family: "Font Awesome 5 Free";
+  color: #a5a7a5;
+  padding-bottom: 20px; }
+
 .menu {
   padding-left: 10px;
   padding-bottom: 10px;
@@ -69,14 +81,21 @@ header {
   grid-row: 1; }
 
 #menu-wrap {
+  padding: 25px;
+  padding-top: 40px;
+  box-shadow: 100px 0px 0px -5px rgba(100, 182, 172, 0.5);
   position: fixed;
-  width: 50%;
-  left: -50%;
+  width: 60%;
+  left: -110%;
   top: 0;
   bottom: 0;
   display: block;
   transition: 0.5s;
   background: #f9f9f9; }
+
+.menu a {
+  color: #a5a7a5;
+  font-family: 'Roboto', 'Sans serif'; }
 
 .menu::before {
   font-family: "Font Awesome 5 Free";
@@ -101,11 +120,28 @@ header {
   opacity: 0; }
 
 #menu_open:checked + .menu::before {
-  font-family: "Font Awesome 5 Free";
   content: "\f00d";
   color: #64b6ac; }
 
 #menu_open:checked + .menu #menu-wrap {
   left: 0; }
+
+#btn_home::before {
+  content: "\f015"; }
+
+#btn_new_post::before {
+  content: "\f044"; }
+
+#btn_favorite::before {
+  content: "\f005"; }
+
+#btn_profile::before {
+  content: "\f007"; }
+
+#btn_settings::before {
+  content: "\f013"; }
+
+#btn_log_out::before {
+  content: "\f2f5"; }
 
 /*# sourceMappingURL=style.css.map */
