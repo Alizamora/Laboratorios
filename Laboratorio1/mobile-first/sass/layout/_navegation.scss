@@ -1,0 +1,22 @@
+// Navegation Styles
+
+#navegacion_principal {
+	background-color: white;
+	box-shadow: -1px 9px 25px -5px rgba(0,0,0,0.19);
+  grid-row: 3;
+	grid-column: 1/4;
+}
+
+.navegation_option {
+	display: inline;
+	padding: 23px;
+} 
+
+.navegation_option a{
+	color: $normal_color;
+}
+
+.navegation_option a:hover{
+	cursor: pointer;
+	color: $primary_color;
+}

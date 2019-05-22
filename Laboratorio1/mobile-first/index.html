@@ -13,29 +13,29 @@
 
     <title>Practice #1</title>
   </head>
+
   <body>
     <!-- Header -->
     <header>
       <!--Menu-->
-      <input type="checkbox" name="" id="menu_open" />
-      <label class="menu" for="menu_open">
-          <i class="fas fa-bars"></i><!-- Icono del menu (librería)-->
-        </label>
-      <nav id="menu-wrap">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New post</a></li>
-          <li><a href="#">Favorite</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Log out</a></li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="menu_open" />
+      <label class="menu fas" for="menu_open">
+        <nav id="menu-wrap">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New post</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </nav>
+      </label>
 
-      <img src="img/logo.svg" alt="logo de la página" />
+      <img id="logo_header" src="img/logo.svg" alt="logo de la página" />
 
       <div id="banner1">
-        <h2>You can use this app for everything that you ...</h2>
+        <img class="img-anuncio1" src="img/anuncio1.png" alt="imagen de un anuncio">
         <div class="sliderSteps">
           <span></span>
           <span></span>
@@ -46,16 +46,15 @@
 
       <nav id="navegacion_principal">
         <ul>
-          <li><a href="#">Lasted</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Your Topics</a></li>
+          <li class="navegation_option"><a href="#">Lasted</a></li>
+          <li class="navegation_option"><a href="#">Popular</a></li>
+          <li class="navegation_option"><a href="#">Your Topics</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Content-->
     <div class="container">
-
       <!-- Post #1 -->
       <label for="post_open">
         <img src="" alt="Imagen del articulo" class="img_post" />
@@ -100,8 +99,7 @@
           phasellus morbi sociis cubilia.
         </p>
         <span class="line"></span>
-        <
-          img src="" alt="" class="img_photo_profile" />
+        < img src="" alt="" class="img_photo_profile" />
         <p class="info">Write by</p>
         <p class="name">Elit Massa</p>
         <p class="description">
@@ -319,7 +317,7 @@
     </div>
 
     <div id="banner2">
-      <img src="img/5.jpg" alt="" />
+      <!--<img src="img/5.jpg" alt="" />-->
       <div class="sliderSteps">
         <span></span>
         <span></span>
@@ -340,9 +338,9 @@
       <span>copy bla bla</span>
       <nav id="navegacion_principal">
         <ul>
-          <li><a href="#">Lasted</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Your Topics</a></li>
+          <li class="navegation_option"><a href="#">Lasted</a></li>
+          <li class="navegation_option"><a href="#">Popular</a></li>
+          <li class="navegation_option"><a href="#">Your Topics</a></li>
         </ul>
       </nav>
     </footer>
