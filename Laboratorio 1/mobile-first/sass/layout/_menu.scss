@@ -1,0 +1,35 @@
+// Menu styles
+
+.menu {
+  display: block;
+}
+.menu-wrap {
+  position: fixed;
+  width: 50%;
+  //right: -50%;
+  top: 0;
+  bottom: 0;
+  display: block;
+  transition: 0.5s;
+  background: #f9f9f9;
+}
+/*.menu::before {
+    cursor: pointer;
+    font-size: 35px;
+    //position: fixed;
+    //z-index: 1;
+    //content: '\f805';
+	}*/
+
+#menu_open {
+  display: none;
+}
+#menu_open:checked {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
