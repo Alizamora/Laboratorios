@@ -7,9 +7,15 @@
 	grid-column: 1/4;
 }
 
+#navegacion_principal ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
 .navegation_option {
 	display: inline;
 	padding: 20px;
+	margin: auto;
 } 
 
 .navegation_option a{

@@ -1,60 +1,96 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 body {
-  font-family: 'Roboto'; }
+  font-family: "Roboto";
+}
 
 ul {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 a {
   text-decoration: none;
-  font-family: 'Roboto' 'Sans Serif'; }
+  font-family: "Roboto" "Sans Serif";
+}
+
+.container {
+  margin: 15px;
+}
 
 .fa-bars {
-  color: white; }
+  color: white;
+}
 
 #banner1 {
   grid-row: 2;
-  grid-column: 1/4; }
+  grid-column: 1/4;
+}
 
 .img-anuncio1 {
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+}
 
 /*
 Estilos de todos los post
 */
+label_post {
+  background-color: white;
+  box-shadow: -1px 9px 25px -5px rgba(0, 0, 0, 0.19);
+  height: auto;
+  padding: 15px;
+  border: solid 1px white;
+  border-radius: 10px;
+  display: block;
+  width: 90%;
+}
+
 input {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 input:checked + .post {
-  height: auto; }
+  height: auto;
+}
 
 .post {
   transition: 0.5s;
   height: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 #navegacion_principal {
   background-color: white;
   box-shadow: -1px 9px 25px -5px rgba(0, 0, 0, 0.19);
   grid-row: 3;
-  grid-column: 1/4; }
+  grid-column: 1/4;
+}
+
+#navegacion_principal ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .navegation_option {
   display: inline;
-  padding: 20px; }
+  padding: 20px;
+  margin: auto;
+}
 
 .navegation_option a {
   font-weight: 500;
-  color: #a5a7a5; }
+  color: #a5a7a5;
+}
 
 .navegation_option a:hover {
   cursor: pointer;
-  color: #64b6ac; }
+  color: #64b6ac;
+}
 
 header {
   width: 100%;
@@ -62,23 +98,27 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(1fr 3);
-  background-color: #64b6ac; }
+  background-color: #64b6ac;
+}
 
 #logo_header {
   grid-row: 1;
   grid-column: 2/3;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .btn_menu {
   font-family: "Font Awesome 5 Free";
   color: #a5a7a5;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .menu {
   padding-left: 10px;
   padding-bottom: 10px;
   display: block;
-  grid-row: 1; }
+  grid-row: 1;
+}
 
 #menu-wrap {
   padding: 25px;
@@ -91,11 +131,13 @@ header {
   bottom: 0;
   display: block;
   transition: 0.5s;
-  background: #f9f9f9; }
+  background: #f9f9f9;
+}
 
 .menu a {
   color: #a5a7a5;
-  font-family: 'Roboto', 'Sans serif'; }
+  font-family: "Roboto", "Sans serif";
+}
 
 .menu::before {
   font-family: "Font Awesome 5 Free";
@@ -103,12 +145,14 @@ header {
   font-size: 35px;
   position: fixed;
   z-index: 1;
-  content: "\f0c9";
+  content: "";
   color: white;
-  transform: scale(0.7); }
+  transform: scale(0.7);
+}
 
 #menu_open {
-  display: none; }
+  display: none;
+}
 
 #menu_open:checked {
   display: block;
@@ -117,31 +161,40 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0; }
+  opacity: 0;
+}
 
 #menu_open:checked + .menu::before {
-  content: "\f00d";
-  color: #64b6ac; }
+  content: "";
+  color: #64b6ac;
+}
 
 #menu_open:checked + .menu #menu-wrap {
-  left: 0; }
+  left: 0;
+}
 
 #btn_home::before {
-  content: "\f015"; }
+  content: "";
+}
 
 #btn_new_post::before {
-  content: "\f044"; }
+  content: "";
+}
 
 #btn_favorite::before {
-  content: "\f005"; }
+  content: "";
+}
 
 #btn_profile::before {
-  content: "\f007"; }
+  content: "";
+}
 
 #btn_settings::before {
-  content: "\f013"; }
+  content: "";
+}
 
 #btn_log_out::before {
-  content: "\f2f5"; }
+  content: "";
+}
 
 /*# sourceMappingURL=style.css.map */
