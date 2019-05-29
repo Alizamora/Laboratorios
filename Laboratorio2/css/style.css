@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr 1fr;
+  grid-template-areas: "header" "post" "slider" "footer";
+  margin: 0;
+}
+@media (min-width: 800px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto minmax(200px, 1fr);
+    grid-template-areas: "header header header" "post post slider" "footer footer footer";
+  }
+}
+
+header {
+  background-color: goldenrod;
+  grid-area: header;
+}
+
+.container {
+  background-color: bisque;
+  grid-area: post;
+}
+
+.slider {
+  background-color: yellowgreen;
+  grid-area: slider;
+}
+
+footer {
+  background-color: blueviolet;
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=style.css.map */
