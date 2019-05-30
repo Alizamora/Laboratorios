@@ -7,6 +7,7 @@ body {
       "header header header"
       "post post slider"
       "footer footer footer";
+    grid-gap: 20px;
   }
 
   display: grid;
@@ -18,4 +19,5 @@ body {
     "slider"
     "footer";
   margin: 0;
+  grid-gap: 20px;
 }

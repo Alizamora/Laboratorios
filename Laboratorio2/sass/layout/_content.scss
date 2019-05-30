@@ -1,4 +1,13 @@
-.container{
-    background-color: bisque;
-    grid-area: post;
+.container {
+  @media (min-width: 800px) {
+		display: grid;
+    grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, 1fr);
+		grid-gap: 10px;
+	}
+	display: grid;
+  grid-area: post;
+  grid-template-columns: 1fr ;
+	grid-template-rows: repeat(10, 1fr);
+	grid-gap: 10px;
 }
