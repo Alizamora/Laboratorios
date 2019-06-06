@@ -7,9 +7,21 @@
 #banner1{
     grid-row: 2;
     grid-column: 1/4;
+    @media (min-width:800px ){
+        background-image: url(../../img/banner1-desktop.png);
+        height: 487px;
+    };
+    background-image: url(../../img/banner1-mobile.png);
+    overflow: hidden;
+    height: 168px;
+    width: 100%;
 }
 
 .img-anuncio1{
+    @media (min-width:800px ){
+        background-image: url(../../img/banner1-desktop.png) 
+    };
+    background-image: url(../../img/banner1-mobile.png);
     overflow: hidden;
     width: 100%;
 }

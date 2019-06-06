@@ -15,10 +15,10 @@
 #menu-wrap {
   padding: 25px;
   padding-top: 40px;
-  box-shadow: 100px 0px 0px -5px rgba(100,182,172,0.5);
+  box-shadow: 100px 0px 0px 50vw rgba(100,182,172,0.5);
   position: fixed;
   width: 60%;
-  left: -110%;
+  left: -160%;
   top: 0;
   bottom: 0;
   display: block;
@@ -85,4 +85,15 @@
 
 #btn_log_out::before {
   content: "\f2f5";
+}
+
+.profile-img-menu{
+  @media (min-width:800px ){
+    background-image: url(../img/profile-desktop.png); 
+    height: 250px;
+    width: 250px;
+};
+background-image: url(../img/profile-mobile.png);
+height: 80px;
+width: 80px;
 }
