@@ -1,6 +1,7 @@
 body {
-  @media (min-width: 321px) {
+  @media (min-width: 325px) {
 		background-image: url("../../img/bg-Tablet.png");
+		background-position: center;
   }
 
   @media (min-width: 800px) {
@@ -9,7 +10,7 @@ body {
 		background-position: center;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
 		background-image: url("../../img/bg-Desktop-HD.png");
 		background-size: cover;
 		background-position: center;
