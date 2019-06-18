@@ -1,0 +1,8 @@
+@mixin title-style {
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 1;
+    letter-spacing: 7px;
+    margin: 0;
+    text-transform: uppercase;
+}

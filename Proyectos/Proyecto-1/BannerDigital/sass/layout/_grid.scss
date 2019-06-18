@@ -1,19 +1,24 @@
-.container{
-    @media (min-width: 321px ) {
-        background-image: url("../../img/bg-Tablet.png");
-    }
+.container {
+	//Tablet
+	@media (min-width: 321px){
+		grid-template-rows: 20% 1fr 35%;
+	}
 
-    @media (min-width: 768px){
-        background-image: url("../../img/bg-Desktop.png");
-    }
+	//Desktop
+	@media (min-width: 800px){
 
-    @media (min-width: 1024px){
-        background-image: url("../../img/bg-Desktop-HD.png");
-        
-    }
+	}
 
-    background-image: url("../../img/bg-Mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	//Desktop HD
+  @media (min-width: 1024px) {
+
+	}
+
+	//Mobile
+	display: grid;
+	grid-template-columns: 1fr 40%;
+	grid-template-rows: 1fr 1fr 25%;
+	grid-row-gap: 10px;
+	margin: 0 auto;
+	width: 80%;
 }
