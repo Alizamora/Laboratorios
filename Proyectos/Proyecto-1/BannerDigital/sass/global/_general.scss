@@ -29,4 +29,8 @@ p{
 
 a{
 	text-decoration: none;
+	&:hover{
+		text-decoration: line-through;
+		transition: width .3s;
+	}
 }

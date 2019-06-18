@@ -25,6 +25,9 @@ p {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: line-through;
+    transition: width .3s; }
 
 .container {
   display: grid;
@@ -211,6 +214,30 @@ a {
       grid-column: 2/3;
       position: relative;
       transform: rotateY(15deg); } }
+
+@media (min-width: 800px) {
+  .neon {
+    text-shadow: 0 0 20px #fff; }
+    .neon ::after {
+      content: attr("text-neon");
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 20px;
+      z-index: -1;
+      color: #fff;
+      filter: blur(15px); }
+    .neon ::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: -2;
+      opacity: .5;
+      filter: blur(40px); } }
 
 .text-color {
   color: #A7DCEA; }
