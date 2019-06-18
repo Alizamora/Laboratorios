@@ -1,0 +1,19 @@
+body {
+  margin: 0 auto; }
+
+.container {
+  background-image: url("../../img/bg-Mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media (min-width: 321px) {
+    .container {
+      background-image: url("../../img/bg-Tablet.png"); } }
+  @media (min-width: 768px) {
+    .container {
+      background-image: url("../../img/bg-Desktop.png"); } }
+  @media (min-width: 1024px) {
+    .container {
+      background-image: url("../../img/bg-Desktop-HD.png"); } }
+
+/*# sourceMappingURL=style.css.map */

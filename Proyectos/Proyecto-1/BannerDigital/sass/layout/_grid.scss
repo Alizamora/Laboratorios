@@ -1,0 +1,19 @@
+.container{
+    @media (min-width: 321px ) {
+        background-image: url("../../img/bg-Tablet.png");
+    }
+
+    @media (min-width: 768px){
+        background-image: url("../../img/bg-Desktop.png");
+    }
+
+    @media (min-width: 1024px){
+        background-image: url("../../img/bg-Desktop-HD.png");
+        
+    }
+
+    background-image: url("../../img/bg-Mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
