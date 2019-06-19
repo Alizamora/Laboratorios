@@ -1,36 +1,36 @@
 body {
   @media (min-width: 325px) {
-		background-image: url("../../img/bg-Tablet.png");
-		background-position: center;
+    background-image: url("../img/bg-Tablet.png");
+    background-position: center;
   }
 
   @media (min-width: 800px) {
-		background-image: url("../../img/bg-Desktop.png");
-		background-size: cover;
+		background-image: url("../img/bg-Desktop.png");
 		background-position: center;
+    background-size: cover;
   }
 
   @media (min-width: 1200px) {
-		background-image: url("../../img/bg-Desktop-HD.png");
-		background-size: cover;
+    background-image: url("../img/bg-Desktop-HD.png");
 		background-position: center;
+		background-size: cover;
   }
 
-  background-image: url("../../img/bg-Mobile.png");
+  background-image: url("../img/bg-Mobile.png");
   background-repeat: no-repeat;
-	background-color: #060129;
+  background-color: #060129;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
 }
 
-p{
-	margin: 0;
+p {
+  margin: 0;
 }
 
-a{
-	text-decoration: none;
-	&:hover{
-		text-decoration: line-through;
-		transition: width .3s;
-	}
+a {
+	&:hover {
+    text-decoration: line-through;
+    transition: width 0.3s;
+  }
+  text-decoration: none;
 }
